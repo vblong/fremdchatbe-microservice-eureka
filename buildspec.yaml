@@ -1,17 +1,16 @@
-// buildspec.yaml
 version: 0.2
-phases: 
+phases:
   install:
     runtime-versions:
     java: coretto11
   pre_build:
-    commands: 
+    commands:
       - echo In the pre_build phase...
       - mvn test
-  build: 
-    commands: 
+  build:
+    commands:
       - echo Build completed on `date`
-      - mvn package  
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `data`
