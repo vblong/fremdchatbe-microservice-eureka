@@ -19,4 +19,4 @@ artifacts:
     - target/*.jar
   discard-paths: yes
 server:
-  port: 8761
+  port: 5000
